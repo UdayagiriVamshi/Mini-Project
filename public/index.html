@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+
+    <!-- New Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Your custom CSS -->
+    <style>
+        body {
+            font-family: 'AR One Sans', sans-serif;
+            background-color: #6f42c1; /* Purple background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #fff; /* White text color */
+        }
+
+        header {
+            background-color: #343a40; /* Dark gray background color for a corporate feel */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #mainheading {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Adjusted height for better placement */
+        }
+
+        .buttonregister,
+        .button {
+            margin: 10px;
+            color: #fff; /* White text color */
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-size: 18px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            width: 200px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .buttonregister {
+            background-color: #dc3545; /* Bootstrap danger color */
+            border: 2px solid #dc3545; /* Matching border color */
+        }
+
+        .button {
+            background-color: #007bff; /* Bootstrap primary color */
+            border: 2px solid #007bff; /* Matching border color */
+        }
+
+        .button:hover,
+        .buttonregister:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border: 2px solid #0056b3; /* Matching border color on hover */
+        }
+
+        .background-image {
+            /* Add your background image properties here */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <h3 class="navbar-brand" id="mainheading">Task Management System</h3>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h1 class="display-4">Welcome to our Task Management System</h1>
+                <p class="lead">Simplify your workflow and boost productivity with our powerful task management solution.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Register Buttons Section -->
+    <div class="button-container">
+        <a class="buttonregister" href="../../register.html">Register</a>
+        <a class="button" href="../../login.html">Login</a>
+    </div>
+
+    <!-- Background Image -->
+    <div class="background-image">
+        <!-- Add your background image content here -->
+    </div>
+
+    <!-- Link to Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

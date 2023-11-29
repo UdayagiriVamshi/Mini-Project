@@ -1,0 +1,382 @@
+.containers{
+
+    position: absolute; 
+    left: 50%;
+    width: 53%;
+    padding: 20px;
+    top: 33%;
+    transform: translate(-50%,-50%);
+    /* border: 1px solid gray; */
+
+}
+
+.anchorbutton{
+
+    position: absolute;
+    left: 1127px;
+    top: 26px;
+
+
+
+}
+.createbutton {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 11px;
+    border: none;
+}
+
+
+
+.cakename{
+    display:inline ;
+}
+
+.fielddata {
+    display: inline;
+    height: 20px;
+    width: 145px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#selectfield{
+    display: inline;
+    height: 41px;
+    width: 168px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#quantityfield{
+    display: inline;
+    height: 41px;
+    width: 168px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#orderconfirm{
+    color: white;
+    position: relative;
+    left: 880px;
+    width: 182px;
+    padding: 4px;
+    border-radius: 11px;
+    background: green;
+    top: -62px;
+    font-size: 22px;
+    z-index: 9;
+}
+
+#detailsmodified
+{
+    color: white;
+    position: relative;
+    left: 880px;
+    width: 236px;
+    padding: 9px;
+    border-radius: 11px;
+    background: #3F51B5;
+    top: -62px;
+    font-size: 16px;
+}
+
+
+
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+   }
+   
+   /* Create a container to center the table */
+   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+   }
+   
+   /* Style the table */
+   .modern-table {
+    width: 95%;
+    
+    position: absolute;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    top: 387px;
+    left: 54px;
+
+
+}
+   
+   .modern-table th, .modern-table td {
+    padding: 8px;
+    text-align: left;
+   }
+   
+   .modern-table th {
+    background-color: #333;
+    color: #fff;
+   }
+   
+   .modern-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+   }
+
+   .modern-table tr td:last-child{
+    width:20%;
+    text-align: center;
+   }
+   
+   .modern-table tr th:last-child{
+    width:20%;
+    text-align: center;
+   }
+
+   .modern-table tr td:nth-last-child(2){
+    width:1%;
+    text-align: center;
+   }
+   .modern-table tr th:nth-last-child(2){
+    width:1%;
+   
+   }
+
+   .modern-table  tr td:first-child {
+    text-align: left;
+    width:12%;
+   }
+   /* Style the buttons */
+   .btn {
+    padding: 6px 12px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+   }
+   
+   .btn:hover {
+    background-color: #555;
+   }
+   
+   /* Responsive table styling */
+   @media screen and (max-width: 600px) {
+    .modern-table {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    }
+   }
+
+   .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+   }
+   
+   .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 751px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    size: ledger;
+    top: 30px;
+    left: 293px;
+    position: absolute;
+}
+   
+   .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+   }
+   
+   form {
+    margin-top: 20px;
+   }
+   
+   label {
+    display: block;
+    margin-bottom: 5px;
+    position: absolute;
+    margin-top: 10px;
+}
+   
+   
+   input {
+    width: 50%;
+    padding: 13px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+   
+   
+   button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    /* z-index: -1; */
+   }
+   
+   button:hover {
+    background-color: #0f1e2e;
+   }
+
+   #showcake {
+    position: absolute;
+    left: 940px;
+    width: 188px;
+    /* border: 1px solid; */
+    height: 156px;
+    filter: drop-shadow(5px 5px 10pxD rgba(0,0,0,0.7));
+    top: 113px;
+    border-radius: 4px;
+    transition: transform .5s; 
+}
+
+#showcake:hover{
+    transform: scale(1.2);
+}
+
+
+/* #formdiv:hover{
+    transform: scale(1.2);
+} */
+
+/* Delete popup */
+.ordercancelpopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 5;
+   }
+   
+   .ordercancelpopup .cancelpopup-content {
+    margin-bottom: 20px;
+   }
+   body{
+    
+    font-family: 'AR One Sans', sans-serif;
+   }
+   
+   .bts {
+        /* padding: 10px 20px; */
+        margin: 10px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        margin: 19px;
+        top: 21px;
+   }
+   
+   button#cancelOrderButton {
+    background-color: #50120d;
+    color: white;
+   }
+   
+   button#confirmCancel {
+    background-color: #f44336;
+    color: white;
+   }
+   
+   button#goBack {
+    background-color: #4CAF50;
+    color: white;
+   }
+
+   #deleteconfirm{
+ font-family: Arial, sans-serif;
+ text-align: center;
+   }
+
+   @font-face {
+    font-family: 'custom-font1';
+    src: url('../assets/fonts/hallington.otf');
+  }
+
+  @font-face {
+    font-family: 'custom-font2';
+    src: url('../assets/fonts/hallington-swash.otf');
+  } 
+
+   #mainheading{
+    color: #9C27B0;
+    font-family: custom-font1;
+    font-weight: lighter;
+    position: relative;
+    left: 390px;
+    letter-spacing: 6px;
+    font-size: 49px;
+}
+
+#cakedescription {
+    position: relative;
+    left: 942px;
+    text-align: justify;
+    top: 188px;
+}
+
+#formdiv{
+    height: 189px;
+    position: absolute;
+    border-radius: 29px;
+    top: 106px;
+    left: 293px;
+    width: 601px;
+    background-image: linear-gradient(to right,rgba(204, 43, 94, 0.5),rgba(117, 58, 136, 0.5));
+    z-index: -9;
+    transition: transform .5s ease;
+}
+
+#totalpricefinal{
+    position: relative;
+    color: #fff5f5;
+    font-weight: bold;
+    border-radius: 3px;
+    background: blue;
+    font-size: 18px;
+    height: 28px;
+    width: 148px;
+    text-align: center;
+    padding: 6px;
+    top: 52px;
+    left: 702px;
+}
+
+.tablecontainer{
+    /* position:relative; */
+    top:-5px;
+}

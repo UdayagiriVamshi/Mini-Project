@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager Admin Page</title>
+  <link rel="stylesheet" href="adminpage.css">
+</head>
+ 
+<header style="font-style: italic;font-weight: bolder;">
+  Admin Dashboard
+</header>
+ 
+<body style="background-color: #fba2e0;">
+  <!-- Navigation bar -->
+  <nav>
+    <a id="createTaskLink" style="border-radius: 50cm;background-color: rgb(6, 2, 0);color: white;" >Add Task</a>
+    <a id="Alltask" style="border-radius: 50cm;background-color: rgb(33, 221, 250);color: rgb(4, 4, 4);">All Tasks</a>
+    <a id="currentTaskLink" style="border-radius: 50cm;background-color: rgb(218, 176, 183);color: rgb(7, 7, 7);">Proceeding Tasks</a>
+    <a id="completedTaskLink" style="border-radius: 50cm;background-color: green;color: white;">Finished Tasks</a>
+    <input type="text" id="searchInput" style="width: 23%;background-color: #c790b0;" placeholder="Search...">
+    <button type="button" id="searchButton" style="padding: 0.7%; background-color: blue;color: white;">Search</button>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+ 
+  <!-- Task table -->
+  <table id="taskTable" style="background-color: #ef45f5;">
+    <!-- Table headers -->
+    <tr>
+      <th>taskid</th>
+      <th>TaskTitle</th>
+      <th>Task Description</th>
+      <th>Comments</th>
+      <th>Due Date</th>
+      <th>Priority Level</th>
+      <th>Assigned to User</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+    <!-- Table data will be added dynamically using JavaScript -->
+  </table>
+ 
+  <!-- Create Task Form Popup -->
+  <div id="createTaskForm" style="background-color: #ff99ff;">
+    <form id="taskForm">
+      <label for="Task_Title" style="font-style: italic;">Task Title:</label>
+      <input type="text" style="background-color: #cc33ff;" id="Task_Title" name="Task_Title" required>
+ 
+      <label for="TASK_DESCRIPTION" style="font-style: italic;">Task Description:</label>
+      <input type="text" style="background-color: #cc33ff;"id="TASK_DESCRIPTION" name="TASK_DESCRIPTION" required>
+      <label for="Comments" style="font-style: italic;">Comments:</label>
+      <input type="text" style="background-color: #cc33ff;"id="Comments" name="Comments" required>
+      <label for="DUE_DATE" style="font-style: italic;">Due Date:</label>
+      <input type="date" style="background-color: #cc33ff;" id="DUE_DATE" name="DUE_DATE" required>
+ 
+      <label for="PRIORITY_LEVEL" style="font-style: italic;">Priority Level:</label>
+      <select id="PRIORITY_LEVEL" style="background-color: #cc33ff;" name="PRIORITY_LEVEL" required>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+ 
+      <label for="ASSIGNED_TO_USER" style="font-style: italic;">Assigned to User:</label>
+      <div id="ASSIGNED_TO_USER" style="background-color: #cc33ff;">
+      </div>
+      <button type="button" id="createTaskFormSubmit" style="background-color: green;color: white;width: 20%;size: 30cm;padding: 10px;border-radius: 30cm;">Submit</button>
+      <button type="button" id="createTaskFormCancel" style="background-color: red; color: white;width: 20%;size: 30cm;padding: 10px;border-radius: 30cm;">Cancel</button>
+    </form>
+  </div>
+ 
+  <!-- New Edit Task Form Popup -->
+  <div id="editTaskForm" class="add-form" style="display: none;">
+    <h2 style="color: white;">Edit Task</h2>
+ 
+    <input type="hidden" id="editTaskId">
+ 
+    <input type="text" id="editTaskTitle" placeholder="Task Title" style="background-color: #FF99FF;" required>
+    <input type="text" id="editTaskDescription" placeholder="Task Description" style="background-color: #FF99FF;" required>
+    <input type="text" id="editComments" placeholder="Comments" style="background-color: #FF99FF;" required>
+    <input type="date" id="editTaskDueDate" placeholder="Due Date" style="background-color: #FF99FF;" required>
+    <select id="editTaskPriority" required style="background-color: #FF99FF;">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="text" id="editTaskAssignedTo" placeholder="Assigned To" required style="background-color: #FF99FF;">
+ 
+    <button id="update1" style="background-color: #ee730e;color: white;" onclick="updateTask()">Update</button>
+    <button onclick="cancel()" style="background-color: #ee0b0b;color: white;">Cancel</button>
+  </div>
+ 
+ 
+ 
+  <script src="adminpage.js"></script>
+ 
+</body>
+ 
+</html>

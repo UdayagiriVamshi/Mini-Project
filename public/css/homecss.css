@@ -1,0 +1,136 @@
+/* Style for the gallery section */
+
+.container {
+
+    margin-top: 20px;
+
+}
+
+@font-face {
+    font-family: 'custom-font1';
+    src: url('../assets/fonts/hallington.otf');
+}
+
+#mainheading {
+    color: #9C27B0;
+    font-family: custom-font1;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    font-size: 43px;
+}
+
+.button {
+    display: block;
+    width: 103px;
+    height: 39px;
+    background: #e2241a;
+    padding: 5px;
+    position: relative;
+    font-size: 21px;
+    left: 690px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.buttonregister {
+    display: block;
+    width: 103px;
+    height: 39px;
+    background: #21db6c;
+    padding: 5px;
+    position: relative;
+    font-size: 21px;
+    left: 672px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.navbar {
+    padding: -0.5rem 1rem;
+}
+
+
+.button:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.buttonregister:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.imagecustom {
+
+    height: 246px;
+    width: 286px;
+    transition: transform .5s;
+    border-radius: 4px;
+
+
+}
+
+
+body {
+
+    background-image: linear-gradient(to right, #EA8D8D, #A890FE);
+
+
+}
+
+
+.imagecustom:hover {
+
+    transform: scale(1.1);
+
+
+}
+
+
+h2 {
+
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: -29px;
+
+}
+
+
+
+.card {
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    width: 288px;
+    background-color: coral;
+    color: brown;
+
+}
+
+
+
+.card-img-top {
+
+    max-height: 200px;
+
+}
+
+
+
+.card-text {
+    text-align: center;
+    font-family: 'AR One Sans',
+        sans-serif;
+    color: #730201;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
